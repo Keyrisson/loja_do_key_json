@@ -1,0 +1,168 @@
+/*body*/
+body{
+    display: grid;
+    grid-template-areas:
+    "cabeca cabeca"
+    "corpo corpo"
+    "peh peh";
+    grid-template-rows: 100px auto auto;
+    grid-template-columns: 200px auto;
+}
+@media only screen and (max-width: 850px){
+    body{
+    display: grid;
+    grid-template-areas:
+        "cabeca"
+        
+        "corpo"
+        "peh";
+    grid-template-rows: 100px auto 100px;
+    grid-template-columns: auto;
+ }
+}
+@media only screen and (max-width: 450px){
+    body{
+    display: grid;
+    grid-template-areas:
+        "cabeca"
+        "corpo"
+        "peh";
+    grid-template-rows: 100px auto auto;
+    grid-template-columns: auto;
+    }
+    aside{
+        display: none;
+    }
+    
+}
+/*header*//* estou a procura de uma namorada morena e adiventista*/
+header{
+    background-color: #ff6100;
+    grid-area: cabeca;
+}
+.headiv{
+    display: flex;
+    
+    
+}
+
+input {
+    
+    width: 1000px;      
+    height: 50px;
+
+  
+}
+.logo{
+    width: 200px;
+    height: auto;
+}
+.divlogo{
+     width: 200px;
+}
+/*aside*/
+aside{
+    background-color:#0d1117;
+    grid-area: braco;   
+}
+.asidiv{
+    width: 200px;
+    height: auto;
+}
+/*main*/
+main{
+    background-color: #0F0F0F;
+    grid-area: corpo;
+    border: rgb(0, 0, 0) 5px solid;
+}
+.voltar{
+    font-size: 20px;
+    letter-spacing: 6px;
+    text-align: center; 
+    color: #ffffff;
+    background-color: #cf5809;
+    border: #04050f  1px solid ;
+}
+a{
+    color: inherit; 
+    text-decoration: none;
+}
+.anuncio{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.produto{
+    display: flex;
+    justify-content: space-between;
+    
+   
+   
+    border-radius: 20px;
+    background-color: #ff7b29; 
+    height: 500px;
+    width: 1180px;
+    margin: 50px;
+}
+.foto{
+    
+    width: 550px;
+  
+}
+.img_foto{
+    width: 550px;
+    border-radius: 20px;
+}
+.btcc{
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+.btc{
+    font-size: 20px;
+    letter-spacing: 6px;
+    text-align: center; 
+    color: #ffffff;
+    background-color: #cf5809;
+    border: #943d03 2px solid;
+    border-radius: 10px;
+    
+}
+.fotos{
+    width: 175px;
+}
+.img_fotos{
+    width: 175px;
+}
+.infor{
+  
+    width: 350px;
+}
+/*footer*/
+footer{
+    background-color: #0b0b0b;
+    grid-area: peh;
+}
+.patrocinadores{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    gap: 100px;
+}
+.patrocinador{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: aliceblue;
+    
+}
+.bloconegro{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+ 
+    width: 200px;
+    height: 200px;
+
+
+}

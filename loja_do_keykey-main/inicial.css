@@ -1,0 +1,166 @@
+/*body*/
+body{
+    display: grid;
+    grid-template-areas:
+    "cabeca cabeca"
+    "braco corpo"
+    "peh peh";
+    grid-template-rows: 100px auto auto;
+    grid-template-columns: 200px auto;
+}
+@media only screen and (max-width: 850px){
+    body{
+    display: grid;
+    grid-template-areas:
+        "cabeca"
+        "braco"
+        "corpo"
+        "peh";
+    grid-template-rows: 100px 50px auto 100px;
+    grid-template-columns: auto;
+ }
+}
+@media only screen and (max-width: 450px){
+    body{
+    display: grid;
+    grid-template-areas:
+        "cabeca"
+        "corpo"
+        "peh";
+    grid-template-rows: 100px auto auto;
+    grid-template-columns: auto;
+    }
+    aside{
+        display: none;
+    }
+    
+}
+/*header*/
+header{
+    background-color: #ff6100;
+    grid-area: cabeca;
+}
+.headiv{
+    display: flex;
+
+}
+
+input {
+    width: 900px;      
+    height: 50px;
+}
+
+.logo{
+    width: 200px;
+    height: 50px ;
+}
+.logn{
+    color: #000000; 
+    background-color: #ff9900;
+    border: #1b1b1b 1px solid;
+    border-radius: 20px;
+    font-size: 30px;
+
+}
+/*aside*/
+aside{
+    background-color:#0d1117;
+    grid-area: braco;   
+}
+.asidiv{
+    width: 200px;
+    height: auto;
+}
+/*main*/
+main{
+    background-color: #0F0F0F;
+    grid-area: corpo;
+    border: rgb(0, 0, 0) 5px solid;
+}
+.letras{
+    font-size: 20px;
+    letter-spacing: 6px;
+    text-align: center; 
+    color: #ff6100;
+}
+a{
+    color: inherit; 
+    text-decoration: none;
+}
+img{
+    height: 200px;
+    width: 200;
+    object-fit: cover;
+}
+.mae{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 40px;
+    border: black 2px solid;
+
+    background-color: #ff7722; 
+    width: 200px;
+    height: 300px;
+    border-radius: 5px;
+    text-align: center;
+    margin: 5px;
+}
+
+/*footer*/
+footer{
+    background-color: #0b0b0b;
+    grid-area: peh;
+}
+.patrocinadores{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    gap: 100px;
+}
+.patrocinador{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: aliceblue;
+    
+}
+.bloconegro{
+    width: 200px;
+    height: 200px;
+
+
+}
+/*SST main*/
+.sst{
+    color: aliceblue;
+    width: 1000px;
+    border: 2px solid black;
+}
+.sst2{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.quero_dormir_pq_ja_e_quatro_horas_da_manha{
+    display: flex;
+    justify-content: space-between;
+    
+   
+   
+    border-radius: 20px;
+    background-color: #ff7b29; 
+
+    
+}
+
+.tsst{
+    text-align: center;
+}
+
+
